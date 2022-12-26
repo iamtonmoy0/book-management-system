@@ -67,6 +67,7 @@ func UpdateBook(w http.ResponseWriter ,r * http.Request){
 	var updateBook = &models.Book{}
 	utils.ParseBody(r, updateBook)
 	vars := mux.Vars["bookId"]
+	bookId := Vars["bookId"]
 	Id , err := strconv.ParseInt(bookId ,0,0)
 	if err != nil{
 		fmt.Println("error while parsing")
@@ -86,6 +87,6 @@ func UpdateBook(w http.ResponseWriter ,r * http.Request){
 	w.Header().Set("Content-Type","pkglication/json")
 	w.WriteHeader(http.StatusOK)
 	w.Write(res)
-}
+} 
 
 
