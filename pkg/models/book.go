@@ -1,8 +1,6 @@
 package models
 
 import (
-	"book-management-system/pkg/config"
-
 	"github.com/iamtonmoy0/book-management-system/pkg/config"
 	"github.com/jinzhu/gorm"
 )

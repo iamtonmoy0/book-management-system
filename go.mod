@@ -1,4 +1,4 @@
-module book-management-system
+module github.com/iamtonmoy0/book-management-system
 
 go 1.19
 
